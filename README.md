@@ -186,7 +186,7 @@ We classify papers according to where LLM will be adapted in the pipeline of RS,
 
 | **Name** | **Paper**                                                                                              | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |             **Link**             | Main Contributions |
 | :------------: | :----------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :-------------------------------------: | ------------------ |
-|      P5✅      | Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5) |          T5-base (223M)          |        Full Finetuning        |      RecSys 2022      | [[Link]](https://arxiv.org/abs/2203.13366) | 1                  |
+|      P5✅      | Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5) |          T5-base (223M)          |        Full Finetuning        |      RecSys 2022      | [[Link]](https://arxiv.org/abs/2203.13366) | 使用文本实现序列推荐+直接推荐+解释生成+评论相关+评分预测合并为同一框架，其中物品和用户表示为<user/item_ID>形式 |
 |     M6-Rec     | M6-Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems                             |          M6-base (300M)          |         Option Tuning         |      Arxiv 2022      | [[Link]](https://arxiv.org/abs/2205.08084) |                    |
 |  InstructRec  | Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach            |         FLAN-T5-XL (3B)         |        Full Finetuning        |      Arxiv 2023      | [[Link]](https://arxiv.org/abs/2305.07001) |                    |
 |    ChatGPT    | Is ChatGPT a Good Recommender? A Preliminary Study                                                           |             ChatGPT             |            Frozen            |      Arxiv 2023      | [[Link]](https://arxiv.org/abs/2304.10149) |                    |
@@ -239,7 +239,6 @@ We classify papers according to where LLM will be adapted in the pipeline of RS,
 
 <details><summary><b>1.6 Other Related Papers</b></summary>
 <p>
-
 `<b>`1.6.1 Related Survey Papers `</b>`
 
 | **Paper**                                                                                                                |        **Publication**        |             **Link**             | Main Contributions |

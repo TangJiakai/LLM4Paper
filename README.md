@@ -1,3 +1,5 @@
+
+
 #! https://zhuanlan.zhihu.com/p/678404083
 
 以LLM4Rec方向为主，还会包含如LLM&Graph等其他方向论文
@@ -8,7 +10,7 @@
 
 引入LLM到推荐中的常用动机：
 
-- LLM可以以prompt方式统一各种下游推荐任务
+- LLM能以prompt方式统一各种下游推荐任务
 - LLM将各模态、各特征统一以文本呈现，缓解不同模态/特征异质性问题
 - LLM具有强大的语言推理能力，能更好的捕获用户的偏好
 - LLM相比于传统推荐算法，具有更好的冷启动和泛化能力，因为文本特征是各用户、物品、领域所共享的
@@ -18,8 +20,8 @@
 <details><summary><b>1.1 LLM for Feature Engineering</b></summary>
 <p>
 
-| **Name** | **Paper**                                                                                                           | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |               **Link**               | Main Contributions |
-| :------------: | :------------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :----------------------------: | :-------------------: | :-----------------------------------------: | ------------------ |
+| **Name** | **Paper**                                                                                                           | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                **Link**                | Main Contributions |
+| :------------: | :------------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :----------------------------: | :-------------------: | :------------------------------------------: | ------------------ |
 |     GReaT     | Language Models are Realistic Tabular Data Generators                                                                     |        GPT2-medium (355M)        |        Full Finetuning        |       ICLR 2023       |   [[Paper]](https://arxiv.org/abs/2210.06280)   |                    |
 |      ONCE      | ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models                       |             ChatGPT             |             Frozen             |       WSDM 2024       |   [[Paper]](https://arxiv.org/abs/2305.06566)   |                    |
 |   AnyPredict   | AnyPredict: Foundation Model for Tabular Prediction                                                                       |             ChatGPT             |             Frozen             |      Arxiv 2023      |   [[Paper]](https://arxiv.org/abs/2305.12081)   |                    |
@@ -57,8 +59,8 @@
 <details><summary><b>1.2 LLM as Feature Encoder</b></summary>
 <p>
 
-| **Name** | **Paper**                                                                                                                      | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                                    **Link**                                    | Main Contributions |
-| :------------: | :----------------------------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :-----------------------------------------------------------------------------------: | ------------------ |
+| **Name** | **Paper**                                                                                                                      | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                                     **Link**                                     | Main Contributions |
+| :------------: | :----------------------------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------------------------------------------------------------------------------: | ------------------ |
 |     U-BERT     | U-BERT: Pre-training User Representations for Improved Recommendation                                                                |         BERT-base (110M)         |        Full Finetuning        |       AAAI 2021       |             [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/16557)             |                    |
 |     UNBERT     | UNBERT: User-News Matching BERT for News Recommendation                                                                              |         BERT-base (110M)         |        Full Finetuning        |      IJCAI 2021      |                   [[Paper]](https://www.ijcai.org/proceedings/2021/462)                   |                    |
 |     PLM-NR     | Empowering News Recommendation with Pre-trained Language Models                                                                      |       RoBERTa-base (125M)       |        Full Finetuning        |      SIGIR 2021      |                        [[Paper]](https://arxiv.org/abs/2104.07413)                        |                    |
@@ -103,11 +105,10 @@
 
 <details><summary><b>1.3 LLM as Scoring/Ranking Function</b></summary>
 <p>
-
-`<b>`1.3.1 Item Scoring Task `</b>`
+### 1.3.1 Item Scoring Task
 
 | **Name** | **Paper**                                                                                                     | **LLM Backbone (Largest)** |     **LLM Tuning Strategy**     | **Publication** |                         **Link**                         | Main Contributions |
-| :------------: | :------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :------------------------------------: | :-------------------: | :------------------------------------------------------------: | ------------------ |
+| :------------: | :------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :------------------------------------: | :-------------------: | :-------------------------------------------------------------: | ------------------ |
 |    LMRecSys    | Language Models as Recommender Systems: Evaluations and Limitations                                                 |          GPT2-XL (1.5B)          |            Full Finetuning            |      ICBINB 2021      |       [[Paper]](https://openreview.net/forum?id=hFx3fY7-m9b)       |                    |
 |      PTab      | PTab: Using the Pre-trained Language Model for Modeling Tabular Data                                                |         BERT-base (110M)         |            Full Finetuning            |      Arxiv 2022      |            [[Paper]](https://arxiv.org/abs/2209.08060)            |                    |
 |    UniTRec    | UniTRec: A Unified Text-to-Text Transformer and Joint Contrastive Learning Framework for Text-based Recommendation  |           BART (406M)           |            Full Finetuning            |       ACL 2023       |            [[Paper]](https://arxiv.org/abs/2305.15756)            |                    |
@@ -144,10 +145,10 @@
 |      LSAT      | Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems                        |            LLaMA (7B)            |                  LoRA                  |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2312.15599)            |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation              |           LLaMA2 (7B)           |            Full Finetuning            |      Arxiv 2024      |            [[Paper]](https://arxiv.org/abs/2401.13870)            |                    |
 
-`<b>`1.3.2 Item Generation Task `</b>`
+### 1.3.2 Item Generation Task 
 
-| **Name** | **Paper**                                                                                                 | **LLM Backbone (Largest)** | **LLM Tuning Strategy** |     **Publication**     |                         **Link**                         | Main Contributions |
-| :------------: | :-------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :----------------------------: | :-------------------------------------------------------------: | ------------------ |
+| **Name** | **Paper**                                                                                                 | **LLM Backbone (Largest)** | **LLM Tuning Strategy** |     **Publication**     |                          **Link**                          | Main Contributions |
+| :------------: | :-------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :----------------------------: | :--------------------------------------------------------------: | ------------------ |
 |    GPT4Rec    | GPT4Rec: A Generative Framework for Personalized Recommendation and User Interests Interpretation               |           GPT2 (110M)           |        Full Finetuning        |           Arxiv 2023           |             [[Paper]](https://arxiv.org/abs/2304.03879)             |                    |
 |      VIP5      | VIP5: Towards Multimodal Foundation Models for Recommendation                                                   |          T5-base (223M)          |    Layerwise Adater Tuning    |           EMNLP 2023           |             [[Paper]](https://arxiv.org/abs/2305.14302)             |                    |
 |     P5-ID     | How to Index Item IDs for Recommendation Foundation Models                                                      |          T5-small (60M)          |        Full Finetuning        |           Arxiv 2023           |             [[Paper]](https://arxiv.org/abs/2305.06569)             |                    |
@@ -191,18 +192,18 @@
 |     STELLA     | Large Language Models are Not Stable Recommender Systems                                                        |             ChatGPT             |            Frozen            |           Arxiv 2023           |             [[Paper]](https://arxiv.org/abs/2312.15746)             |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation          |           LLaMA2 (7B)           |        Full Finetuning        |           Arxiv 2024           |             [[Paper]](https://arxiv.org/abs/2401.13870)             |                    |
 
-1.3.3 Hybrid Task 
+### 1.3.3 Hybrid Task
 
-| **Name** | **Paper**                                                                                              | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |             **Link**             | Main Contributions |
-| :------------: | :----------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :-------------------------------------: | ------------------ |
-|      P5✅      | Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5) |          T5-base (223M)          |        Full Finetuning        |      RecSys 2022      | [[Code]](https://github.com/jeykigung/P5) | 使用相同的语言建模目标实现统一的推荐引擎（序列推荐+直接推荐+解释生成+评论相关+评分预测），实现基于prompt的指令推荐 |
-|     M6-Rec✅     | M6-Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems                             |          M6-base (300M)          |         Option Tuning         |      Arxiv 2022      | [[Paper]](https://arxiv.org/abs/2205.08084) | 用户行为转化为纯文本，训练任务包括CTR/CVR+解释生成+query生成+对话推荐+产品生成+检索任务等（无ID）。同时设计多个优化操作，如option tuning等 |
-|  InstructRec✅  | Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach            |         FLAN-T5-XL (3B)         |        Full Finetuning        |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2305.07001) | 设计39粗粒度instruction prompt（Preference+Intention+Task Form+Context）用于不同场景，并基于此自动生成多个细粒度个性化instruction（无ID），将推荐任务转化为instruction following范式，实现用户自由地表达需求 |
-|    ChatGPT✅    | Is ChatGPT a Good Recommender? A Preliminary Study                                                           |             ChatGPT             |            Frozen            |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2304.10149) | 探测ChatGPT在A评分预测、B直接推荐、C序列推荐、D解释生成和E评论总结五方面的能力。结论是A、D和E表现较佳，但是B和C表现差 |
-|    ChatGPT✅    | Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent                           |             ChatGPT             |            Frozen            |      Arxiv 2023      | [[Code]](https://github.com/sunnweiwei/RankGPT) | 已有工作缺乏对LLM对于文档重拍能力的探索，本文验证了GPT4相比于SOTA的优越性，此外本文也将ChatGPT排序能力蒸馏到小模型，实现性能的提升 |
-|    ChatGPT✅    | Uncovering ChatGPT's Capabilities in Recommender Systems                                                     |             ChatGPT             |            Frozen            |      RecSys 2023      | [[Code]](https://github.com/rainym00d/LLM4RS) | 探测ChatGPT在point-wise，pair-wise和list-wise下的推荐性能 |
-|      BDLM      | Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation   |           Vicuna (7B)           |        Full Finetuning        |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2311.03778) |                    |
-|   RecRanker✅   | RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation                        |           LLaMA2 (13B)           |        Full Finetuning        |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2312.16018) | 混合排序（point+pair+list）指令构建，prompt位置消偏，自适应用户采样（重要性、cluster-based，重复惩罚），推断时使用三种排序任务的（调整后）分数之和。 |
+| **Name** | **Paper**                                                                                              | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                **Link**                | Main Contributions                                                                                                                                                                                           |
+| :------------: | :----------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|      P5✅      | Recommendation as Language Processing (RLP): A Unified Pretrain, Personalized Prompt & Predict Paradigm (P5) |          T5-base (223M)          |        Full Finetuning        |      RecSys 2022      |    [[Code]](https://github.com/jeykigung/P5)    | 使用相同的语言建模目标实现统一的推荐引擎（序列推荐+直接推荐+解释生成+评论相关+评分预测），实现基于prompt的指令推荐                                                                                           |
+|    M6-Rec✅    | M6-Rec: Generative Pretrained Language Models are Open-Ended Recommender Systems                             |          M6-base (300M)          |         Option Tuning         |      Arxiv 2022      |   [[Paper]](https://arxiv.org/abs/2205.08084)   | 用户行为转化为纯文本，训练任务包括CTR/CVR+解释生成+query生成+对话推荐+产品生成+检索任务等（无ID）。同时设计多个优化操作，如option tuning等                                                                   |
+| InstructRec✅ | Recommendation as Instruction Following: A Large Language Model Empowered Recommendation Approach            |         FLAN-T5-XL (3B)         |        Full Finetuning        |      Arxiv 2023      |   [[Paper]](https://arxiv.org/abs/2305.07001)   | 设计39粗粒度instruction prompt（Preference+Intention+Task Form+Context）用于不同场景，并基于此自动生成多个细粒度个性化instruction（无ID），将推荐任务转化为instruction following范式，实现用户自由地表达需求 |
+|   ✅   | Is ChatGPT a Good Recommender? A Preliminary Study                                                           |             ChatGPT             |            Frozen            |      Arxiv 2023      |   [[Paper]](https://arxiv.org/abs/2304.10149)   | 探测ChatGPT在A评分预测、B直接推荐、C序列推荐、D解释生成和E评论总结五方面的能力。结论是A、D和E表现较佳，但是B和C表现差                                                                                        |
+|   ✅   | Is ChatGPT Good at Search? Investigating Large Language Models as Re-Ranking Agent                           |             ChatGPT             |            Frozen            |      Arxiv 2023      | [[Code]](https://github.com/sunnweiwei/RankGPT) | 已有工作缺乏对LLM对于文档重拍能力的探索，本文验证了GPT4相比于SOTA的优越性，此外本文也将ChatGPT排序能力蒸馏到小模型，实现性能的提升                                                                           |
+|   ✅   | Uncovering ChatGPT's Capabilities in Recommender Systems                                                     |             ChatGPT             |            Frozen            |      RecSys 2023      |  [[Code]](https://github.com/rainym00d/LLM4RS)  | 探测ChatGPT在point-wise，pair-wise和list-wise下的推荐性能                                                                                                                                                    |
+|     BDLM✅     | Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation   |           Vicuna (7B)           |        Full Finetuning        |      Arxiv 2023      |   [[Paper]](https://arxiv.org/abs/2311.03778)   | 大模型以文本形式表达难以区分相似但仍有微小区别的商品，且难以表示复杂的用户行为模式；传统domain-specific模型难以在数据稀疏场景表现好。提出信息共享模块，用户/物品ID token扩充词表，联合模型训练等方法。       |
+|  RecRanker✅  | RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation                        |           LLaMA2 (13B)           |        Full Finetuning        |      Arxiv 2023      |   [[Paper]](https://arxiv.org/abs/2312.16018)   | 混合排序（point+pair+list）指令构建，prompt位置消偏，自适应用户采样（重要性、cluster-based，重复惩罚），推断时使用三种排序任务的（调整后）分数之和。                                                         |
 
 </p>
 </details>
@@ -210,8 +211,8 @@
 <details><summary><b>1.4 LLM for User Interaction</b></summary>
 <p>
 
-| **Name** | **Paper**                                                                                                     | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |             **Link**             | Main Contributions |
-| :------------: | :------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :---------------------------: | :-------------------: | :-------------------------------------: | ------------------ |
+| **Name** | **Paper**                                                                                                     | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |              **Link**              | Main Contributions |
+| :------------: | :------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :---------------------------: | :-------------------: | :--------------------------------------: | ------------------ |
 |   TG-ReDial   | Towards Topic-Guided Conversational Recommender System                                                              |  BERT-base (110M) & GPT2 (110M)  |            Unknown            |      COLING 2020      | [[Paper]](https://arxiv.org/abs/2010.04125) |                    |
 |      TCP      | Follow Me: Conversation Planning for Target-driven Recommendation Dialogue Systems                                  |         BERT-base (110M)         |        Full Finetuning        |      Arxiv 2022      | [[Paper]](https://arxiv.org/abs/2208.03516) |                    |
 |     BARCOR     | BARCOR: Towards A Unified Framework for Conversational Recommendation Systems                                       |         BART-base (139M)         |  Selective-layer Finetuning  |      Arxiv 2022      | [[Paper]](https://arxiv.org/abs/2203.14257) |                    |
@@ -222,7 +223,7 @@
 |     VRICR     | Variational Reasoning over Incomplete Knowledge Graphs for Conversational Recommendation                            |         BERT-base (110M)         |        Full Finetuning        |       WSDM 2023       | [[Paper]](https://arxiv.org/abs/2212.11868) |                    |
 |      KECR      | Explicit Knowledge Graph Reasoning for Conversational Recommendation                                                |  BERT-base (110M) & GPT2 (110M)  |            Frozen            |     ACM TIST 2023     | [[Paper]](https://arxiv.org/abs/2305.00783) |                    |
 |     T5-CR     | Multi-Task End-to-End Training Improves Conversational Recommendation                                               |          T5-base (223M)          |        Full Finetuning        |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2305.06218) |                    |
-|      TtW      | Talk the Walk: Synthetic Data Generation for Conversational Music Recommendation                                    |  T5-base (223M) & T5-XXL (11B)  |   Full Finetuning & Frozen   |      Arxiv 2023      |                                        |                    |
+|      TtW      | Talk the Walk: Synthetic Data Generation for Conversational Music Recommendation                                    |  T5-base (223M) & T5-XXL (11B)  |   Full Finetuning & Frozen   |      Arxiv 2023      |                                          |                    |
 |      N/A      | Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models                     |             ChatGPT             |            Frozen            |      EMNLP 2023      | [[Paper]](https://arxiv.org/abs/2305.13112) |                    |
 |      N/A      | Large Language Models as Zero-Shot Conversational Recommenders                                                      |               GPT4               |            Frozen            |       CIKM 2023       | [[Paper]](https://arxiv.org/abs/2308.10053) |                    |
 |    MuseChat    | MuseChat: A Conversational Music Recommendation System for Videos                                                   |           Vicuna (7B)           |             LoRA             |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2310.06282) |                    |
@@ -234,8 +235,8 @@
 <details><summary><b>1.5 LLM for RS Pipeline Controller</b></summary>
 <p>
 
-| **Name** | **Paper**                                                                                  | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |             **Link**             | Main Contributions |
-| :------------: | :----------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :-------------------------------------: | ------------------ |
+| **Name** | **Paper**                                                                                  | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |              **Link**              | Main Contributions |
+| :------------: | :----------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :--------------------------------------: | ------------------ |
 |    Chat-REC    | Chat-REC: Towards Interactive and Explainable LLMs-Augmented Recommender System                  |             ChatGPT             |            Frozen            |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2303.14524) |                    |
 |     RecLLM     | Leveraging Large Language Models in Conversational Recommender Systems                           |            LLaMA (7B)            |        Full Finetuning        |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2305.07961) |                    |
 |      RAH      | RAH! RecSys-Assistant-Human: A Human-Central Recommendation Framework with Large Language Models |               GPT4               |            Frozen            |      Arxiv 2023      | [[Paper]](https://arxiv.org/abs/2308.09904) |                    |
@@ -250,8 +251,8 @@
 <p>
 `<b>`1.6.1 Related Survey Papers `</b>`
 
-| **Paper**                                                                                                                |        **Publication**        |             **Link**             | Main Contributions |
-| :----------------------------------------------------------------------------------------------------------------------------- | :---------------------------------: | :-------------------------------------: | ------------------ |
+| **Paper**                                                                                                                |        **Publication**        |              **Link**              | Main Contributions |
+| :----------------------------------------------------------------------------------------------------------------------------- | :---------------------------------: | :--------------------------------------: | ------------------ |
 | Prompting Large Language Models for Recommender Systems: A Comprehensive Framework and Empirical Analysis                      |             Arixv 2024             | [[Paper]](https://arxiv.org/abs/2401.04997) |                    |
 | User Modeling in the Era of Large Language Models: Current Research and Future Directions                                      | IEEE Data Engineering Bulletin 2023 | [[Paper]](https://arxiv.org/abs/2312.11518) |                    |
 | A Survey on Large Language Models for Personalized and Explainable Recommendations                                             |             Arxiv 2023             | [[Paper]](https://arxiv.org/abs/2311.12338) |                    |
@@ -265,8 +266,8 @@
 
 `<b>`1.6.2 Other Papers `</b>`
 
-| **Paper**                                                                         | **Publication** |                      **Link**                      | Main Contributions |
-| :-------------------------------------------------------------------------------------- | :-------------------: | :-------------------------------------------------------: | ------------------ |
+| **Paper**                                                                         | **Publication** |                       **Link**                       | Main Contributions |
+| :-------------------------------------------------------------------------------------- | :-------------------: | :--------------------------------------------------------: | ------------------ |
 | Large Language Model Can Interpret Latent Space of Sequential Recommender               |      Arxiv 2023      |          [[Paper]](https://arxiv.org/abs/2310.20487)          |                    |
 | Zero-Shot Recommendations with Pre-Trained Large Language Models for Multimodal Nudging |      Arxiv 2023      |          [[Paper]](https://arxiv.org/abs/2309.01026)          |                    |
 | INTERS: Unlocking the Power of Large Language Models in Search with Instruction Tuning  |      Arxiv 2024      |          [[Paper]](https://arxiv.org/abs/2401.06532)          |                    |
@@ -281,8 +282,8 @@
 <details><summary><b>1.7 Paper Pending List: to be Added to Our Survey Paper</b></summary>
 <p>
 
-|  **Name**  | **Paper**                                                                                                                         | **LLM Backbone (Largest)** | **LLM Tuning Strategy** |     **Publication**     |                      **Link**                      |
-| :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :----------------------------: | :-------------------------------------------------------: |
+|  **Name**  | **Paper**                                                                                                                         | **LLM Backbone (Largest)** | **LLM Tuning Strategy** |     **Publication**     |                       **Link**                       |
+| :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :----------------------------: | :--------------------------------------------------------: |
 |                  | A Large Language Model Enhanced Conversational Recommender System                                                                       |                                  |                              |           Arxiv 2023           |          [[Paper]](https://arxiv.org/abs/2308.06212)          |
 |                  | User-Centric Conversational Recommendation: Adapting the Need of User with Large Language Models                                        |                                  |                              | RecSys Doctoral Symposium 2023 | [[Paper]](https://dl.acm.org/doi/abs/10.1145/3604915.3608885) |
 |                  | Improving Conversational Recommendation Systems via Bias Analysis and Language-Model-Enhanced Data Augmentation                         |                                  |                              |           Arxiv 2023           |          [[Paper]](https://arxiv.org/abs/2310.16738)          |
@@ -308,8 +309,8 @@
 ## 2. LLM & Graph
 
 | **Name** | **Paper** | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** | **Link** | Main Contributions |
-| :------: | :-------- | :------------------------: | :---------------------: | :-------------: | :------: | :----------------: |
-|          |           |                            |                         |                 |          |                    |
+| :------------: | :-------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------: | :----------------: |
+|                |                 |                                  |                              |                      |                |                    |
 
 ## 3. Datasets & Benchmarks
 
@@ -340,10 +341,11 @@ The datasets & benchmarks for LLM-related RS topics should maintain the original
 
 ## 4. Related Repositories
 
-|                                                  **Repo Name**                                                  |           **Maintainer**           |
-| :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------: |
-|                            [rs-llm-paper-list](https://github.com/wwliu555/rs-llm-paper-list)                            |   [wwliu555](https://github.com/wwliu555)   |
-| [awesome-recommend-system-pretraining-papers](https://github.com/archersama/awesome-recommend-system-pretraining-papers) | [archersama](https://github.com/archersama) |
-|                                        [LLM4Rec](https://github.com/WLiK/LLM4Rec)                                        |       [WLiK](https://github.com/WLiK)       |
-|                       [Awesome-LLM4RS-Papers](https://github.com/nancheng58/Awesome-LLM4RS-Papers)                       | [nancheng58](https://github.com/nancheng58) |
-|                               [LLM4IR-Survey](https://github.com/RUC-NLPIR/LLM4IR-Survey)                               |  [RUC-NLPIR](https://github.com/RUC-NLPIR)  |
+|                                                  **Repo Name**                                                  |           **Maintainer**           |           Link           |
+| :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+|                            [rs-llm-paper-list](https://github.com/wwliu555/rs-llm-paper-list)                            |   [wwliu555](https://github.com/wwliu555)   |      |
+| [awesome-recommend-system-pretraining-papers](https://github.com/archersama/awesome-recommend-system-pretraining-papers) | [archersama](https://github.com/archersama) |  |
+|                                        [LLM4Rec](https://github.com/WLiK/LLM4Rec)                                        |       [WLiK](https://github.com/WLiK)       |              |
+|                       [Awesome-LLM4RS-Papers](https://github.com/nancheng58/Awesome-LLM4RS-Papers)                       | [nancheng58](https://github.com/nancheng58) |  |
+|                               [LLM4IR-Survey](https://github.com/RUC-NLPIR/LLM4IR-Survey)                               |  [RUC-NLPIR](https://github.com/RUC-NLPIR)  |    |
+| [Awesome-LLM-for-RecSys](https://github.com/CHIANGEL/Awesome-LLM-for-RecSys) | [Jianghao Lin](https://github.com/CHIANGEL) | [[Survey]](https://github.com/CHIANGEL/Awesome-LLM-for-RecSys) |

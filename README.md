@@ -1,8 +1,36 @@
-
-
 #! https://zhuanlan.zhihu.com/p/678404083
 
-以LLM4Rec方向为主，还会包含如LLM&Graph等其他方向论文
+以LLM & Rec方向为主，还会包含如LLM&Graph等其他方向论文（筛除普通BERT等小模型，研究纯LLM x Others，待整理）
+
+目录如下
+
+1. LLM & RS
+   
+   1.1 LLM for Feature Engineering
+   
+   1.2 LLM as Feature Encoder
+   
+   1.3 LLM as Scoring/Ranking Function
+   
+   ​	1.3.1 Item Scoring Task
+   
+   ​	1.3.2 Item Generation Task 
+   
+   ​	1.3.3 Hybrid Task
+   
+   1.4 LLM for User Interaction
+   
+   1.5 LLM for RS Pipeline Controller
+
+2. LLM & Graph
+
+3. Datasets & Benchmarks
+
+   3.1 Datasets
+
+   3.2 Benchmarks
+
+4. Related Repositories
 
 # LLM-Paper
 
@@ -105,7 +133,11 @@
 
 <details><summary><b>1.3 LLM as Scoring/Ranking Function</b></summary>
 <p>
+
+
+
 ### 1.3.1 Item Scoring Task
+
 
 | **Name** | **Paper**                                                                                                     | **LLM Backbone (Largest)** |     **LLM Tuning Strategy**     | **Publication** |                         **Link**                         | Main Contributions |
 | :------------: | :------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :------------------------------------: | :-------------------: | :-------------------------------------------------------------: | ------------------ |

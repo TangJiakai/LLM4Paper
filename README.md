@@ -20,9 +20,9 @@
 
    ​		1.3.3 [Hybrid Task](#1.3.3)
 
-​	1.4 [LLM for User Interaction](#1.4)
+​		1.4 [LLM for User Interaction](#1.4)
 
-​	1.5 [LLM for RS Pipeline Controller](#1.5)
+​		1.5 [LLM for RS Pipeline Controller](#1.5)
 
 2. [LLM & Graph](#2)
 

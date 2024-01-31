@@ -6,19 +6,19 @@
 
 目录如下
 
-[1. LLM & RS](#1)
+1. [LLM & RS](#1)
 
-[1.1 LLM for Feature Engineering](#1.1)
+   1.1 [LLM for Feature Engineering](#1.1)
 
-1.2 LLM as Feature Encoder
+   1.2 [LLM as Feature Encoder](1.2)
 
-1.3 LLM as Scoring/Ranking Function
+   1.3 [LLM as Scoring/Ranking Function](1.3)
 
-​	1.3.1 Item Scoring Task
+   ​		1.3.1 [Item Scoring Task](1.3.1)
 
-​	1.3.2 Item Generation Task 
+   ​		1.3.2 [Item Generation Task](1.3.2)
 
-​	1.3.3 Hybrid Task
+   ​		1.3.3 [Hybrid Task](1.3.3)
 
 1.4 LLM for User Interaction
 
@@ -85,8 +85,9 @@
 </p>
 </details>
 
-<details><summary><b>1.2 LLM as Feature Encoder</b></summary>
+<details><summary><h3 id="1.2">1.2 LLM as Feature Encoder</h3></summary>
 <p>
+
 
 | **Name** | **Paper**                                                                                                                      | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                                     **Link**                                     | Main Contributions |
 | :------------: | :----------------------------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------------------------------------------------------------------------------: | ------------------ |
@@ -132,12 +133,12 @@
 </p>
 </details>
 
-<details><summary><b>1.3 LLM as Scoring/Ranking Function</b></summary>
+<details><summary><h3 id="1.3">1.3 LLM as Scoring/Ranking Function</h3></summary>
 <p>
 
 
 
-### 1.3.1 Item Scoring Task
+<h3 id="1.3.1">1.3.1 Item Scoring Task</h3>
 
 
 | **Name** | **Paper**                                                                                                     | **LLM Backbone (Largest)** |     **LLM Tuning Strategy**     | **Publication** |                         **Link**                         | Main Contributions |
@@ -178,7 +179,7 @@
 |      LSAT      | Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems                        |            LLaMA (7B)            |                  LoRA                  |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2312.15599)            |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation              |           LLaMA2 (7B)           |            Full Finetuning            |      Arxiv 2024      |            [[Paper]](https://arxiv.org/abs/2401.13870)            |                    |
 
-### 1.3.2 Item Generation Task 
+<h3 id="1.3.2">1.3.2 Item Generation Task</h3>
 
 | **Name** | **Paper**                                                                                                 | **LLM Backbone (Largest)** | **LLM Tuning Strategy** |     **Publication**     |                          **Link**                          | Main Contributions |
 | :------------: | :-------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :----------------------------: | :--------------------------------------------------------------: | ------------------ |
@@ -226,7 +227,7 @@
 |     STELLA     | Large Language Models are Not Stable Recommender Systems                                                        |             ChatGPT             |            Frozen            |           Arxiv 2023           |             [[Paper]](https://arxiv.org/abs/2312.15746)             |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation          |           LLaMA2 (7B)           |        Full Finetuning        |           Arxiv 2024           |             [[Paper]](https://arxiv.org/abs/2401.13870)             |                    |
 
-### 1.3.3 Hybrid Task
+<h3 id="1.3.3">1.3.3 Hybrid Task</h3>
 
 | **Name** | **Paper**                                                                                              | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                **Link**                | Main Contributions                                                                                                                                                                                           |
 | :------------: | :----------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

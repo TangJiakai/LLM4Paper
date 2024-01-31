@@ -20,19 +20,19 @@
 
    ​		1.3.3 [Hybrid Task](#1.3.3)
 
-1.4 LLM for User Interaction
+​	1.4 [LLM for User Interaction](#1.4)
 
-1.5 LLM for RS Pipeline Controller
+​	1.5 [LLM for RS Pipeline Controller](#1.5)
 
-2. LLM & Graph
+2. [LLM & Graph](#2)
 
-3. Datasets & Benchmarks
+3. [Datasets & Benchmarks](#3)
 
-   3.1 Datasets
+   3.1 [Datasets](#3.1)
 
-   3.2 Benchmarks
+   3.2 [Benchmarks](#3.2)
 
-4. Related Repositories
+4. [Related Repositories](#4)
 
 <h2 id="1">1. LLM & RS</h2>
 
@@ -138,7 +138,7 @@
 
 
 
-<h3 id="1.3.1">1.3.1 Item Scoring Task</h3>
+<h4 id="1.3.1">1.3.1 Item Scoring Task</h4>
 
 
 | **Name** | **Paper**                                                                                                     | **LLM Backbone (Largest)** |     **LLM Tuning Strategy**     | **Publication** |                         **Link**                         | Main Contributions |
@@ -179,7 +179,7 @@
 |      LSAT      | Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems                        |            LLaMA (7B)            |                  LoRA                  |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2312.15599)            |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation              |           LLaMA2 (7B)           |            Full Finetuning            |      Arxiv 2024      |            [[Paper]](https://arxiv.org/abs/2401.13870)            |                    |
 
-<h3 id="1.3.2">1.3.2 Item Generation Task</h3>
+<h4 id="1.3.2">1.3.2 Item Generation Task</h4>
 
 | **Name** | **Paper**                                                                                                 | **LLM Backbone (Largest)** | **LLM Tuning Strategy** |     **Publication**     |                          **Link**                          | Main Contributions |
 | :------------: | :-------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :----------------------------: | :--------------------------------------------------------------: | ------------------ |
@@ -227,7 +227,7 @@
 |     STELLA     | Large Language Models are Not Stable Recommender Systems                                                        |             ChatGPT             |            Frozen            |           Arxiv 2023           |             [[Paper]](https://arxiv.org/abs/2312.15746)             |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation          |           LLaMA2 (7B)           |        Full Finetuning        |           Arxiv 2024           |             [[Paper]](https://arxiv.org/abs/2401.13870)             |                    |
 
-<h3 id="1.3.3">1.3.3 Hybrid Task</h3>
+<h4 id="1.3.3">1.3.3 Hybrid Task</h4>
 
 | **Name** | **Paper**                                                                                              | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                **Link**                | Main Contributions                                                                                                                                                                                           |
 | :------------: | :----------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -242,8 +242,9 @@
 </p>
 </details>
 
-<details><summary><b>1.4 LLM for User Interaction</b></summary>
+<details><summary><h3 id="1.4">1.4 LLM for User Interaction</h3></summary>
 <p>
+
 
 | **Name** | **Paper**                                                                                                     | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |              **Link**              | Main Contributions |
 | :------------: | :------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :---------------------------: | :-------------------: | :--------------------------------------: | ------------------ |
@@ -266,8 +267,9 @@
 </p>
 </details>
 
-<details><summary><b>1.5 LLM for RS Pipeline Controller</b></summary>
+<details><summary><h3 id="1.5">1.5 LLM for RS Pipeline Controller</h3></summary>
 <p>
+
 
 | **Name** | **Paper**                                                                                  | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |              **Link**              | Main Contributions |
 | :------------: | :----------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :--------------------------------------: | ------------------ |
@@ -281,9 +283,11 @@
 </p>
 </details>
 
-<details><summary><b>1.6 Other Related Papers</b></summary>
+<details><summary><h3 id="1.6">1.6 Other Related Papers</h3></summary>
 <p>
-`<b>`1.6.1 Related Survey Papers `</b>`
+
+<h4 id="1.6.1">1.6.1 Related Survey Papers</h4> 
+
 
 | **Paper**                                                                                                                |        **Publication**        |              **Link**              | Main Contributions |
 | :----------------------------------------------------------------------------------------------------------------------------- | :---------------------------------: | :--------------------------------------: | ------------------ |
@@ -298,7 +302,7 @@
 | Pre-train, Prompt and Recommendation: A Comprehensive Survey of Language Modelling Paradigm Adaptations in Recommender Systems |              TACL 2023              | [[Paper]](https://arxiv.org/abs/2302.03735) |                    |
 | Self-Supervised Learning for Recommender Systems: A Survey                                                                     |              TKDE 2022              | [[Paper]](https://arxiv.org/abs/2203.15876) |                    |
 
-`<b>`1.6.2 Other Papers `</b>`
+<h4 id="1.6.2">1.6.2 Other Papers</h4>
 
 | **Paper**                                                                         | **Publication** |                       **Link**                       | Main Contributions |
 | :-------------------------------------------------------------------------------------- | :-------------------: | :--------------------------------------------------------: | ------------------ |
@@ -313,8 +317,9 @@
 </p>
 </details>
 
-<details><summary><b>1.7 Paper Pending List: to be Added to Our Survey Paper</b></summary>
+<details><summary><h3 id="1.7">1.7 Paper Pending List: to be Added to Our Survey Paper</h3></summary>
 <p>
+
 
 |  **Name**  | **Paper**                                                                                                                         | **LLM Backbone (Largest)** | **LLM Tuning Strategy** |     **Publication**     |                       **Link**                       |
 | :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :----------------------------: | :--------------------------------------------------------: |
@@ -340,17 +345,17 @@
 </p>
 </details>
 
-## 2. LLM & Graph
+<h2 id="2">2. LLM & Graph</h2>
 
 | **Name** | **Paper** | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** | **Link** | Main Contributions |
 | :------------: | :-------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------: | :----------------: |
 |                |                 |                                  |                              |                      |                |                    |
 
-## 3. Datasets & Benchmarks
+<h2 id="3"> 3. Datasets & Benchmarks </h2>
 
 The datasets & benchmarks for LLM-related RS topics should maintain the original semantic/textual features, instead of anonymous feature IDs.
 
-### 3.1 Datasets
+<h3 id="3.1">3.1 Datasets</h3>
 
 | **Dataset** | **RS Scenario** |                                                               **Link**                                                               | Main Contributions |
 | :---------------: | :--------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: | ------------------ |
@@ -364,7 +369,7 @@ The datasets & benchmarks for LLM-related RS topics should maintain the original
 |     PixelRec     |      Short Video      |                                              [[Link]](https://github.com/westlake-repl/PixelRec)                                              |                    |
 |      Netflix      |         Movie         |                                                   [[Link]](https://github.com/HKUDS/LLMRec)                                                   |                    |
 
-### 3.2 Benchmarks
+<h3 id="3.2">3.2 Benchmarks</h3>
 
 |   **Benchmarks**   |                                      **Webcite Link**                                      |             **Paper**             | Main Contributions |
 | :----------------------: | :-----------------------------------------------------------------------------------------------: | :--------------------------------------: | ------------------ |
@@ -373,7 +378,7 @@ The datasets & benchmarks for LLM-related RS topics should maintain the original
 |          OpenP5          |                           [[Link]](https://github.com/agiresearch/OpenP5)                           | [[Paper]](https://arxiv.org/abs/2306.11134) |                    |
 |          TABLET          |                             [[Link]](https://dylanslacks.website/Tablet)                             | [[Paper]](https://arxiv.org/abs/2304.13188) |                    |
 
-## 4. Related Repositories
+<h2 id="4">Related Repositories</h2>
 
 |                                                  **Repo Name**                                                  |           **Maintainer**           |           Link           |
 | :-------------------------------------------------------------------------------------------------------------------: | :--------------------------------------: | :--------------------------------------: |

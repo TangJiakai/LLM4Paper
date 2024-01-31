@@ -1,6 +1,6 @@
 #! https://zhuanlan.zhihu.com/p/678404083
 
-以LLM4Rec方向为主，还会包含其他LLM&Graph等其他方向论文
+以LLM4Rec方向为主，还会包含如LLM&Graph等其他方向论文
 
 # LLM-Paper
 
@@ -319,24 +319,24 @@ The datasets & benchmarks for LLM-related RS topics should maintain the original
 
 | **Dataset** | **RS Scenario** |                                                               **Link**                                                               | Main Contributions |
 | :---------------: | :--------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: | ------------------ |
-|   Reddit-Movie   | Conversational & Movie | [[Paper]](https://github.com/AaronHeee/LLMs-as-Zero-Shot-Conversational-RecSys#large-language-models-as-zero-shot-conversational-recommenders) |                    |
-|     Amazon-M2     |       E-commerce       |                                                  [[Paper]](https://arxiv.org/abs/2307.09688)                                                  |                    |
-|     MovieLens     |         Movie         |                                            [[Paper]](https://grouplens.org/datasets/movielens/1m/)                                            |                    |
-|      Amazon      |       E-commerce       |                                   [[Paper]](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews)                                   |                    |
-|   BookCrossing   |          Book          |                                        [[Paper]](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)                                        |                    |
-|     GoodReads     |          Book          |                                          [[Paper]](https://mengtingwan.github.io/data/goodreads.html)                                          |                    |
-|       Anime       |         Anime         |                             [[Paper]](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)                             |                    |
-|     PixelRec     |      Short Video      |                                              [[Paper]](https://github.com/westlake-repl/PixelRec)                                              |                    |
-|      Netflix      |         Movie         |                                                   [[Paper]](https://github.com/HKUDS/LLMRec)                                                   |                    |
+|   Reddit-Movie   | Conversational & Movie | [[Link]](https://github.com/AaronHeee/LLMs-as-Zero-Shot-Conversational-RecSys#large-language-models-as-zero-shot-conversational-recommenders) |                    |
+|     Amazon-M2     |       E-commerce       |                                                  [[Link]](https://arxiv.org/abs/2307.09688)                                                  |                    |
+|     MovieLens     |         Movie         |                                            [[Link]](https://grouplens.org/datasets/movielens/1m/)                                            |                    |
+|      Amazon      |       E-commerce       |                                   [[Link]](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews)                                   |                    |
+|   BookCrossing   |          Book          |                                        [[Link]](http://www2.informatik.uni-freiburg.de/~cziegler/BX/)                                        |                    |
+|     GoodReads     |          Book          |                                          [[Link]](https://mengtingwan.github.io/data/goodreads.html)                                          |                    |
+|       Anime       |         Anime         |                             [[Link]](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)                             |                    |
+|     PixelRec     |      Short Video      |                                              [[Link]](https://github.com/westlake-repl/PixelRec)                                              |                    |
+|      Netflix      |         Movie         |                                                   [[Link]](https://github.com/HKUDS/LLMRec)                                                   |                    |
 
 ### 3.2 Benchmarks
 
 |   **Benchmarks**   |                                      **Webcite Link**                                      |             **Paper**             | Main Contributions |
 | :----------------------: | :-----------------------------------------------------------------------------------------------: | :--------------------------------------: | ------------------ |
-| Amazon-M2 (KDD Cup 2023) | [[Paper]](https://www.aicrowd.com/challenges/amazon-kdd-cup-23-multilingual-recommendation-challenge) | [[Paper]](https://arxiv.org/abs/2307.09688) |                    |
-|          LLMRec          |                           [[Paper]](https://github.com/williamliujl/LLMRec)                           | [[Paper]](https://arxiv.org/abs/2308.12241) |                    |
-|          OpenP5          |                           [[Paper]](https://github.com/agiresearch/OpenP5)                           | [[Paper]](https://arxiv.org/abs/2306.11134) |                    |
-|          TABLET          |                             [[Paper]](https://dylanslacks.website/Tablet)                             | [[Paper]](https://arxiv.org/abs/2304.13188) |                    |
+| Amazon-M2 (KDD Cup 2023) | [[Link]](https://www.aicrowd.com/challenges/amazon-kdd-cup-23-multilingual-recommendation-challenge) | [[Paper]](https://arxiv.org/abs/2307.09688) |                    |
+|          LLMRec          |                           [[Link]](https://github.com/williamliujl/LLMRec)                           | [[Paper]](https://arxiv.org/abs/2308.12241) |                    |
+|          OpenP5          |                           [[Link]](https://github.com/agiresearch/OpenP5)                           | [[Paper]](https://arxiv.org/abs/2306.11134) |                    |
+|          TABLET          |                             [[Link]](https://dylanslacks.website/Tablet)                             | [[Paper]](https://arxiv.org/abs/2304.13188) |                    |
 
 ## 4. Related Repositories
 

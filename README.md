@@ -10,15 +10,15 @@
 
    1.1 [LLM for Feature Engineering](#1.1)
 
-   1.2 [LLM as Feature Encoder](1.2)
+   1.2 [LLM as Feature Encoder](#1.2)
 
-   1.3 [LLM as Scoring/Ranking Function](1.3)
+   1.3 [LLM as Scoring/Ranking Function](#1.3)
 
-   ​		1.3.1 [Item Scoring Task](1.3.1)
+   ​		1.3.1 [Item Scoring Task](#1.3.1)
 
-   ​		1.3.2 [Item Generation Task](1.3.2)
+   ​		1.3.2 [Item Generation Task](#1.3.2)
 
-   ​		1.3.3 [Hybrid Task](1.3.3)
+   ​		1.3.3 [Hybrid Task](#1.3.3)
 
 1.4 LLM for User Interaction
 

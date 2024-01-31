@@ -1,26 +1,28 @@
 #! https://zhuanlan.zhihu.com/p/678404083
 
+### LLM-Paper
+
 以LLM & Rec方向为主，还会包含如LLM&Graph等其他方向论文（筛除普通BERT等小模型，研究纯LLM x Others，待整理）
 
 目录如下
 
-1. LLM & RS
-   
-   1.1 LLM for Feature Engineering
-   
-   1.2 LLM as Feature Encoder
-   
-   1.3 LLM as Scoring/Ranking Function
-   
-   ​	1.3.1 Item Scoring Task
-   
-   ​	1.3.2 Item Generation Task 
-   
-   ​	1.3.3 Hybrid Task
-   
-   1.4 LLM for User Interaction
-   
-   1.5 LLM for RS Pipeline Controller
+[1. LLM & RS](#1)
+
+[1.1 LLM for Feature Engineering](#1.1)
+
+1.2 LLM as Feature Encoder
+
+1.3 LLM as Scoring/Ranking Function
+
+​	1.3.1 Item Scoring Task
+
+​	1.3.2 Item Generation Task 
+
+​	1.3.3 Hybrid Task
+
+1.4 LLM for User Interaction
+
+1.5 LLM for RS Pipeline Controller
 
 2. LLM & Graph
 
@@ -32,9 +34,7 @@
 
 4. Related Repositories
 
-# LLM-Paper
-
-## 1. LLM & RS
+<h2 id="1">1. LLM & RS</h2>
 
 引入LLM到推荐中的常用动机：
 
@@ -45,8 +45,9 @@
 
 ![](where-framework-1.png)
 
-<details><summary><b>1.1 LLM for Feature Engineering</b></summary>
+<details><summary><h3 id="1.1">1.1 LLM for Feature Engineering</h3></summary>
 <p>
+
 
 | **Name** | **Paper**                                                                                                           | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                **Link**                | Main Contributions |
 | :------------: | :------------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :----------------------------: | :-------------------: | :------------------------------------------: | ------------------ |

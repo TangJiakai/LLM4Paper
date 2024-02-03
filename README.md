@@ -42,7 +42,7 @@
 - LLM将各模态、各特征统一以文本呈现，缓解不同模态/特征异质性问题
 - LLM具有强大的语言推理能力，能更好的捕获用户的偏好
 - LLM相比于传统推荐算法，具有更好的冷启动和泛化能力，因为文本特征是各用户、物品、领域所共享的
-- 只有ID，缺乏世界知识，只有文本，缺乏理解推荐协同/序列交互模式，结合二者才能充分发挥世界知识和行为知识的优势
+- 只有ID，缺乏世界知识，只有文本，缺乏理解推荐协同/序列交互模式，结合二者（可视为多个模态）才能充分发挥世界知识和行为知识的优势
 
 ![](where-framework-1.png)
 
@@ -159,7 +159,7 @@
 |    CR-SoRec    | CR-SoRec: BERT driven Consistency Regularization for Social Recommendation                                          |         BERT-base (110M)         |            Full Finetuning            |      RecSys 2023      | [[Paper]](https://dl.acm.org/doi/fullHtml/10.1145/3604915.3608844) |                    |
 |   PromptRec   | Towards Personalized Cold-Start Recommendation with Prompts                                                         |            LLaMA (7B)            |                 Frozen                 |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2306.17256)            |                    |
 |     GLRec     | Exploring Large Language Model for Graph Data Understanding in Online Job Recommendations                           |         BELLE-LLaMA (7B)         |                  LoRA                  |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2307.05722)            |                    |
-|    BERT4CTR    | BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction |       RoBERTa-large (355M)       |            Full Finetuning            |       KDD 2023       |   [[Paper]](https://dl.acm.org/doi/abs/10.1145/3580305.3599780)   |                    |
+|    BERT4CTR✅    | BERT4CTR: An Efficient Framework to Combine Pre-trained Language Model with Non-textual Features for CTR Prediction |       RoBERTa-large (355M)       |            Full Finetuning            |       KDD 2023       |   [[Paper]](https://dl.acm.org/doi/abs/10.1145/3580305.3599780)   | 融合非文本特征（sparse和dense feature）到LM是有挑战性的。本文提出Uni-Attention方法，非文本特征取消位置编码，同时改变其Attention方式，非文本特征作为Q，文本特征作为V和K。 |
 |     ReLLa✅     | ReLLa: Retrieval-enhanced Large Language Models for Lifelong Sequential Behavior Comprehension in Recommendation    |           Vicuna (13B)           |                  LoRA                  |       WWW 2024       |            [[Paper]](https://arxiv.org/abs/2308.11131)            | 实验发现推荐场景中，并非用户历史序列越长效果越好。本文提出使用semantic user behavior retrieval (SUBR)代替最近K个交互历史来提升数据质量。对于zero-shot，不tune模型而直接使用SUBR；对于few-shot，除了使用SUBR，还要用原始和SUBR增强的数据来训练模型。SUBR具体是对历史物品和目标物品做PCA降维，然后cosine计算相似度，替换原先的最近K个交互历史。 |
 |     TASTE     | Text Matching Improves Sequential Recommendation by Reducing Popularity Biases                                      |          T5-base (223M)          |            Full Finetuning            |       CIKM 2023       |            [[Paper]](https://arxiv.org/abs/2308.14029)            |                    |
 |      N/A      | Unveiling Challenging Cases in Text-based Recommender Systems                                                       |         BERT-base (110M)         |            Full Finetuning            | RecSys Workshop 2023 |         [[Paper]](https://ceur-ws.org/Vol-3476/paper5.pdf)         |                    |

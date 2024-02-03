@@ -42,6 +42,7 @@
 - LLM将各模态、各特征统一以文本呈现，缓解不同模态/特征异质性问题
 - LLM具有强大的语言推理能力，能更好的捕获用户的偏好
 - LLM相比于传统推荐算法，具有更好的冷启动和泛化能力，因为文本特征是各用户、物品、领域所共享的
+- 只有ID，缺乏世界知识，只有文本，缺乏理解推荐协同/序列交互模式，结合二者才能充分发挥世界知识和行为知识的优势
 
 ![](where-framework-1.png)
 
@@ -149,7 +150,7 @@
 |   Prompt4NR   | Prompt Learning for News Recommendation                                                                             |         BERT-base (110M)         |            Full Finetuning            |      SIGIR 2023      |            [[Paper]](https://arxiv.org/abs/2304.05263)            |                    |
 |   RecFormer   | Text Is All You Need: Learning Language Representations for Sequential Recommendation                               |        LongFormer (149M)        |            Full Finetuning            |       KDD 2023       |           [[Paper]](https://arxiv.org/abs/2305.13731v1)           |                    |
 |     TabLLM     | TabLLM: Few-shot Classification of Tabular Data with Large Language Models                                          |             T0 (11B)             | Few-shot Parameter-effiecnt Finetuning |     AISTATS 2023     |            [[Paper]](https://arxiv.org/abs/2210.10723)            |                    |
-|      UP5      | UP5: Unbiased Foundation Model for Fairness-aware Recommendation                                                    |          T5-base (223M)          |             Prefix Tuning             |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2305.12090)            |                    |
+|      UP5✅      | UP5: Unbiased Foundation Model for Fairness-aware Recommendation                                                    |          T5-base (223M)          |             Prefix Tuning             |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2305.12090)            | 研究LLM推荐的用户公平性。提出prefix prompt和分类器之间对抗训练实现公平性；其中prefix soft prompt分别加在encoder和decoder前面，对于多个敏感属性的混合，使用target-attention机制生成单一prefix prompt。 |
 | Zero-shot GPT | Zero-Shot Recommendation as Language Modeling                                                                       |        GPT2-medium (355M)        |                 Frozen                 |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2112.04184)            |                    |
 |    FLAN-T5    | Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction                                      |         FLAN-5-XXL (11B)         |            Full Finetuning            |      Arxiv 2023      |          [[Paper]](https://arxiv.org/pdf/2305.06474.pdf)          |                    |
 |    BookGPT    | BookGPT: A General Framework for Book Recommendation Empowered by Large Language Model                              |             ChatGPT             |                 Frozen                 |      Arxiv 2023      |           [[Paper]](https://arxiv.org/abs/2305.15673v1)           |                    |

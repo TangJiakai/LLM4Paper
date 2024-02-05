@@ -2,7 +2,7 @@
 
 ### LLM-Paper
 
-以LLM & Rec方向为主，还会包含如LLM&Graph等其他方向论文（筛除普通BERT等小模型，研究纯LLM x Others，待整理）
+以LLM4Rec方向为主，还会包含如LLM&Graph, LLM4IR等其他方向论文
 
 目录如下
 

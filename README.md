@@ -8,41 +8,41 @@
 
 1. [LLM & RS](#1)
 
-   1.1 [LLM for Feature Engineering](#1.1)
+   🔷  1.1 [LLM for Feature Engineering](#1.1)
 
-   ​		1.1.1 [User- and Item-level Feature Augmentation](#1.1.1)
+   ​		🔸 1.1.1 [User- and Item-level Feature Augmentation](#1.1.1)
 
-   ​		1.1.2 [Instance-level Sample Generation](#1.1.2)
+   ​		🔸 1.1.2 [Instance-level Sample Generation](#1.1.2)
 
-   1.2 [LLM as Feature Encoder](#1.2)
+   🔷 1.2 [LLM as Feature Encoder](#1.2)
 
-   ​		1.2.1 [Representation Enhancement](#1.2.1)
+   ​		🔸 1.2.1 [Representation Enhancement](#1.2.1)
 
-   ​		1.2.2 [Unified Cross-domain Recommendation](#1.2.2)
+   ​		🔸 1.2.2 [Unified Cross-domain Recommendation](#1.2.2)
    
-   1.3 [LLM as Scoring/Ranking Function](#1.3)
+   🔷 1.3 [LLM as Scoring/Ranking Function](#1.3)
    
-   ​		1.3.1 [Item Scoring Task](#1.3.1)
+   ​		🔸 1.3.1 [Item Scoring Task](#1.3.1)
    
-   ​		1.3.2 [Item Generation Task](#1.3.2)
+   ​		🔸 1.3.2 [Item Generation Task](#1.3.2)
    
-   ​		1.3.3 [Hybrid Task](#1.3.3)
+   ​		🔸 1.3.3 [Hybrid Task](#1.3.3)
 
-​		1.4 [LLM for User Interaction](#1.4)
+​		🔷 1.4 [LLM for User Interaction](#1.4)
 
-​				1.4.1 [Task-oriented User Interaction](#1.4.1)
+​				🔸 1.4.1 [Task-oriented User Interaction](#1.4.1)
 
-​				1.4.2 [Open-ended User Interaction](#1.4.2)
+​				🔸 1.4.2 [Open-ended User Interaction](#1.4.2)
 
-​		1.5 [LLM for RS Pipeline Controller](#1.5)
+​		🔷 1.5 [LLM for RS Pipeline Controller](#1.5)
 
 2. [LLM & Graph](#2)
 
 3. [Datasets & Benchmarks](#3)
 
-   3.1 [Datasets](#3.1)
+   🔷 3.1 [Datasets](#3.1)
 
-   3.2 [Benchmarks](#3.2)
+   🔷 3.2 [Benchmarks](#3.2)
 
 4. [Related Repositories](#4)
 
@@ -54,7 +54,7 @@
 - LLM将各模态、各特征统一以文本呈现，缓解不同模态/特征异质性问题
 - LLM具有强大的语言推理能力，能更好的捕获用户的偏好
 - LLM相比于传统推荐算法，具有更好的冷启动和泛化能力，因为文本特征是各用户、物品、领域所共享的
-- 只有ID，缺乏世界知识，只有文本，缺乏理解推荐协同/序列交互模式，结合二者（可视为多个模态）才能充分发挥世界知识和行为知识的优势
+- 只有ID会缺乏世界知识，只有文本会缺乏理解推荐协同/序列交互模式，结合二者（可视为多个模态）才能充分发挥世界知识和行为知识的优势
 
 ![](where-framework-1.png)
 

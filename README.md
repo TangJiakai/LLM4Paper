@@ -10,17 +10,29 @@
 
    1.1 [LLM for Feature Engineering](#1.1)
 
+   ​		1.1.1 [User- and Item-level Feature Augmentation](#1.1.1)
+
+   ​		1.1.2 [Instance-level Sample Generation](#1.1.2)
+
    1.2 [LLM as Feature Encoder](#1.2)
 
+   ​		1.2.1 [Representation Enhancement](#1.2.1)
+
+   ​		1.2.2 [Unified Cross-domain Recommendation](#1.2.2)
+   
    1.3 [LLM as Scoring/Ranking Function](#1.3)
-
+   
    ​		1.3.1 [Item Scoring Task](#1.3.1)
-
+   
    ​		1.3.2 [Item Generation Task](#1.3.2)
-
+   
    ​		1.3.3 [Hybrid Task](#1.3.3)
 
 ​		1.4 [LLM for User Interaction](#1.4)
+
+​				1.4.1 [Task-oriented User Interaction](#1.4.1)
+
+​				1.4.2 [Open-ended User Interaction](#1.4.2)
 
 ​		1.5 [LLM for RS Pipeline Controller](#1.5)
 

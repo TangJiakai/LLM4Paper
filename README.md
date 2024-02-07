@@ -86,9 +86,6 @@
 |     LLMHG     | LLM-Guided Multi-View Hypergraph Learning for Human-Centric Explainable Recommendation                                    |               GPT4               |             Frozen             |      Arxiv 2024      |   [[Paper]](https://arxiv.org/abs/2401.08217)   |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation                    |           LLaMA2 (7B)           |        Full Finetuning        |      Arxiv 2024      |   [[Paper]](https://arxiv.org/abs/2401.13870)   |                    |
 
-</p>
-</details>
-
 <h4 id="1.1.2">1.1.2 Instance-level Sample Generation</h4>
 
 |   **Name**    | **Paper**                                                    | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                  **Link**                   | Main Contributions |
@@ -103,6 +100,9 @@
 |    PO4ISR     | Large Language Models for Intent-Driven Session Recommendations |          ChatGPT           |         Frozen          |   Arxiv 2023    | [[Paper]](https://arxiv.org/abs/2312.07552) |                    |
 |     BEQUE     | Large Language Model based Long-tail Query Rewriting in Taobao Search |        ChatGLM (6B)        |     Full Finetuning     |   Arxiv 2023    | [[Paper]](https://arxiv.org/abs/2311.03758) |                    |
 | Agent4Ranking | Agent4Ranking: Semantic Robust Ranking via Personalized Query Rewriting Using Multi-agent LLM |          ChatGPT           |         Frozen          |   Arxiv 2023    | [[Paper]](https://arxiv.org/abs/2312.15450) |                    |
+
+</p>
+</details>
 
 <details><summary><h3 id="1.2">1.2 LLM as Feature Encoder</h3></summary>
 <p>
@@ -137,9 +137,6 @@
 |   Social-LLM   | Social-LLM: Modeling User Behavior at Scale using Language Models and Social Network Data                                            |     SBERT-MPNet0base (110M)     |            Frozen            |      Arxiv 2024      |                        [[Paper]](https://arxiv.org/abs/2401.00893)                        |                    |
 |     LLMRS     | LLMRS: Unlocking Potentials of LLM-Based Recommender Systems for Software Purchase                                                   |           MPNet (110M)           |            Frozen            |      Arxiv 2024      |                        [[Paper]](https://arxiv.org/abs/2401.06676)                        |                    |
 
-</p>
-</details>
-
 <h4 id="1.2.2">1.2.2 Unified Cross-domain Recommendation</h4>
 
 |    **Name**    | **Paper**                                                    | **LLM Backbone (Largest)** | **LLM Tuning Strategy**  | **Publication** |                  **Link**                   | Main Contributions |
@@ -156,6 +153,9 @@
 |      UFIN      | UFIN: Universal Feature Interaction Network for Multi-Domain Click-Through Rate Prediction |    FLAN-T5-base (250M)     |          Frozen          |   Arxiv 2023    | [[Paper]](https://arxiv.org/abs/2311.15493) |                    |
 |     PMMRec     | Multi-Modality is All You Need for Transferable Recommender Systems |    RoBERTa-large (355M)    |  Top-2-layer Finetuning  |    ICDE 2024    | [[Paper]](https://arxiv.org/abs/2312.09602) |                    |
 |    Uni-CTR     | A Unified Framework for Multi-Domain CTR Prediction via Large Language Models |    Sheared-LLaMA (1.3B)    |           LoRA           |   Arxiv 2023    | [[Paper]](https://arxiv.org/abs/2312.10743) |                    |
+
+</p>
+</details>
 
 <details><summary><h3 id="1.3">1.3 LLM as Scoring/Ranking Function</h3></summary>
 <p>

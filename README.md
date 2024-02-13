@@ -382,7 +382,7 @@
 
 | **Name** | **Paper** | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** | **Link** | Main Contributions |
 | :------------: | :-------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------: | :----------------: |
-|                |                 |                                  |                              |                      |                |                    |
+| GraphGPT✅ | GraphGPT: Graph Instruction Tuning for Large Language Models | Vicuna (7B) | Frozen | Arxiv 2023 | [[Code]](https://github.com/HKUDS/GraphGPT) | 已有预训练图Embedding依赖于下游任务的微调，限制了其在少量数据或数据不可用的场景。本文提出GraphGPT框架对齐LLM和图结构知识通过两阶段的指令微调，包括SSL指令（文本和图表示匹配）+具体任务图指令（节点分类和链接预测），同时利用ChatGPT的CoT技术蒸馏开源LLM；将具体任务指令和CoT指令数据混合作为模型微调数据。 |
 
 <h2 id="3"> 3. Datasets & Benchmarks </h2>
 

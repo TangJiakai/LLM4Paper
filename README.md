@@ -199,6 +199,7 @@
 |      CER      | The Problem of Coherence in Natural Language Explanations of Recommendations                                        |           GPT2 (110M)           |            Full Finetuning            |       ECAI 2023       |            [[Paper]](https://arxiv.org/abs/2312.11356)            |                    |
 |      LSAT      | Preliminary Study on Incremental Learning for Large Language Model-based Recommender Systems                        |            LLaMA (7B)            |                  LoRA                  |      Arxiv 2023      |            [[Paper]](https://arxiv.org/abs/2312.15599)            |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation              |           LLaMA2 (7B)           |            Full Finetuning            |      Arxiv 2024      |            [[Paper]](https://arxiv.org/abs/2401.13870)            |                    |
+| PFCR✅ | Prompt-enhanced Federated Content Representation Learning for Cross-domain Recommendation |  | Full Finetuning | WWW 2024 | [[Code]](https://github.com/Ckano/PFCR) | 已有跨域推荐联邦算法存在缺陷：(1)用户个性化信息上传到中心服务器，容易泄漏用户隐私；(2)依赖于ID表示，不利于不同域之间迁移；(3)基于跨域之间存在重叠用户假设。本文提出：(1) 将每个域视作client，用户隐私数据进行局部更新，只上传每个client的物品相关梯度；(2)使用文本表示物品信息（为防止recommender过于强调文本特征，使用text->code->representation机制）；(3)提出Full prompting机制（序列prompt、用户prompt、domain prompt）和Light Prompting机制（序列prompting、域prompting）实现域自适应微调。 |
 
 <h4 id="1.3.2">1.3.2 Item Generation Task</h4>
 
@@ -369,7 +370,6 @@
 |                  | LLM4Vis: Explainable Visualization Recommendation using ChatGPT                                                                         |                                  |                              |           EMNLP 2023           |          [[Paper]](https://arxiv.org/abs/2310.07652)          |
 |                  | Parameter-Efficient Conversational Recommender System as a Language Processing Task                                                     |                                  |                              |           EACL 2024           |          [[Paper]](https://arxiv.org/abs/2401.14194)          |
 | | Data-efficient Fine-tuning for LLM-based Recommendation | | | Arxiv 2024 | [[Paper]](https://arxiv.org/abs/2401.17197) |
-| | Prompt-enhanced Federated Content Representation Learning for Cross-domain Recommendation | | | WWW 2024 |  |
 | | LoRec: Large Language Model for Robust Sequential Recommendation against Poisoning Attacks | | | Arxiv 2024 |  |
 | | PAP-REC: Personalized Automatic Prompt for Recommendation Language Model | | | Arxiv 2024 |  |
 | | From PARIS to LE-PARIS: Toward Patent Response Automation with Recommender Systems and Collaborative Large Language Models | | | Arxiv 2024 |  |

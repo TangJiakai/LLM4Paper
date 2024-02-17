@@ -27,14 +27,14 @@
    ​		🔸 1.3.2 [Item Generation Task](#1.3.2)
    
    ​		🔸 1.3.3 [Hybrid Task](#1.3.3)
-
-​		🔷 1.4 [LLM for User Interaction](#1.4)
-
-​				🔸 1.4.1 [Task-oriented User Interaction](#1.4.1)
-
-​				🔸 1.4.2 [Open-ended User Interaction](#1.4.2)
-
-​		🔷 1.5 [LLM for RS Pipeline Controller](#1.5)
+   
+   🔷 1.4 [LLM for User Interaction](#1.4)
+   
+   ​		🔸 1.4.1 [Task-oriented User Interaction](#1.4.1)
+   
+   ​		🔸 1.4.2 [Open-ended User Interaction](#1.4.2)
+   
+   🔷 1.5 [LLM for RS Pipeline Controller](#1.5)
 
 2. [LLM & Graph](#2)
 

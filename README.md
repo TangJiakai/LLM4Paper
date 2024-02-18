@@ -136,6 +136,7 @@
 |      UEM      | User Embedding Model for Personalized Language Prompting                                                                             |     Sentence-T5-base (223M)     |            Frozen            |      Arxiv 2024      |                        [[Paper]](https://arxiv.org/abs/2401.04858)                        |                    |
 |   Social-LLM   | Social-LLM: Modeling User Behavior at Scale using Language Models and Social Network Data                                            |     SBERT-MPNet0base (110M)     |            Frozen            |      Arxiv 2024      |                        [[Paper]](https://arxiv.org/abs/2401.00893)                        |                    |
 |     LLMRS     | LLMRS: Unlocking Potentials of LLM-Based Recommender Systems for Software Purchase                                                   |           MPNet (110M)           |            Frozen            |      Arxiv 2024      |                        [[Paper]](https://arxiv.org/abs/2401.06676)                        |                    |
+| GaCLLM✅ | Large Language Model with Graph Convolution for Recommendation | ChatGLM (6B) | LoRA | Arxiv 2024 | [[Paper]](https://arxiv.org/pdf/2402.08859.pdf) | 现有LLM推荐忽略了用户-物品交互的结构化知识。本文提出利用LLM捕捉高阶的用户-物品关系。首先，在具体domain上执行SFT训练，对齐用户和物品的描述；第二，递归地从少到多融合邻居信息。最后，通过拼接图embedding表示和LLM图表示，内积计算u-i得分。 |
 
 <h4 id="1.2.2">1.2.2 Unified Cross-domain Recommendation</h4>
 

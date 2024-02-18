@@ -249,6 +249,7 @@
 |      LiT5      | Scaling Down, LiTting Up: Efficient Zero-Shot Listwise Reranking with Seq2seq Encoder-Decoder Models            |            T5-XL (3B)            |        Full Finetuning        |           Arxiv 2023           |             [[Paper]](https://arxiv.org/abs/2312.16098)             |                    |
 |     STELLA     | Large Language Models are Not Stable Recommender Systems                                                        |             ChatGPT             |            Frozen            |           Arxiv 2023           |             [[Paper]](https://arxiv.org/abs/2312.15746)             |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation          |           LLaMA2 (7B)           |        Full Finetuning        |           Arxiv 2024           |             [[Paper]](https://arxiv.org/abs/2401.13870)             |                    |
+| VST✅ | Rec-GPT4V: Multimodal Recommendation with Large Vision-Language Models | GPT4<br />LLaVA (13B) | Frozen | Arxiv 2024 | [[Paper]](https://arxiv.org/pdf/2402.08670.pdf) | large vision-language model (LVLM)缺乏用户偏好知识，难以解决包含大量离散、噪声、冗余的图像序列。本文提出VST模型通过从物品的关键图像中提取总结信息（利用LVLM），再将这些信息和物品title拼接作为用品文本表示。 |
 
 <h4 id="1.3.3">1.3.3 Hybrid Task</h4>
 

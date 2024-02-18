@@ -60,7 +60,9 @@
 
 <details><summary><h3 id="1.1">1.1 LLM for Feature Engineering</h3></summary>
 <p>
+
 <h4 id="1.1.1">1.1.1 User- and Item-level Feature Augmentation</h4>
+
 
 | **Name** | **Paper**                                                                                                           | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |                **Link**                | Main Contributions |
 | :------------: | :------------------------------------------------------------------------------------------------------------------------ | :------------------------------: | :----------------------------: | :-------------------: | :------------------------------------------: | ------------------ |
@@ -85,6 +87,7 @@
 |      UEM      | User Embedding Model for Personalized Language Prompting                                                                  |       FLAN-T5-base (250M)       |        Full Finetuning        |      Arxiv 2024      |   [[Paper]](https://arxiv.org/abs/2401.04858)   |                    |
 |     LLMHG     | LLM-Guided Multi-View Hypergraph Learning for Human-Centric Explainable Recommendation                                    |               GPT4               |             Frozen             |      Arxiv 2024      |   [[Paper]](https://arxiv.org/abs/2401.08217)   |                    |
 |   Llama4Rec   | Integrating Large Language Models into Recommendation via Mutual Augmentation and Adaptive Aggregation                    |           LLaMA2 (7B)           |        Full Finetuning        |      Arxiv 2024      |   [[Paper]](https://arxiv.org/abs/2401.13870)   |                    |
+| LLMHG✅ | LLM-Guided Multi-View Hypergraph Learning for Human-Centric Explainable Recommendation | GPT4 | Frozen | Arxiv 2024 | [[Paper]](https://arxiv.org/pdf/2401.08217.pdf) | 仅依赖交互历史不能完全捕捉人类兴趣的多面偏好。本文提出使用LLM从用户序列中推导出多个Interest Angles(IAs)，再基于IA将物品划分多个组（形成超边）。此外，由于LLM可能无法考虑到所有物品的特性，以及由于概率推理的本质，可能产生不正确的推理导致次优的IA提取，本文进一步设计后处理方法，利用超边内实体靠近和超边之间拉远的方法进行超图结构化学习。最后结合超图神经网络算法预测分数。 |
 
 <h4 id="1.1.2">1.1.2 Instance-level Sample Generation</h4>
 

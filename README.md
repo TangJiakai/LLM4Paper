@@ -392,6 +392,7 @@
 | :------------: | :-------------- | :------------------------------: | :---------------------------: | :-------------------: | :------------: | :----------------: |
 | GraphGPT✅ | GraphGPT: Graph Instruction Tuning for Large Language Models | Vicuna (7B) | Frozen | Arxiv 2023 | [[Code]](https://github.com/HKUDS/GraphGPT) | 已有预训练图Embedding依赖于下游任务的微调，限制了其在少量数据或数据不可用的场景。本文提出GraphGPT框架对齐LLM和图结构知识通过两阶段的指令微调，包括SSL指令（文本和图表示匹配）+具体任务图指令（节点分类和链接预测），同时利用ChatGPT的CoT技术蒸馏开源LLM；将具体任务指令和CoT指令数据混合作为模型微调数据。 |
 | InstructGraph✅ | InstructGraph: Boosting Large Language Models via Graph-centric Instruction Tuning and Preference Alignment | LLaMA (7B) | LoRA | Arxiv 2024 | [[Paper]](https://arxiv.org/pdf/2402.08785.pdf) | 赋予LLM图推理和图生成的能力，并利用偏好对齐解决生成幻象问题。第一步，将图编码为code_like的基本变量，并设计图结构建模、图语言建模、图生成建模和图思维建模作为指令微调数据。第二步，为了解决图推理和图生成过程中出现的幻象，利用DPO对齐方法减轻。 |
+| GraphAdapter✅ | Can GNN be Good Adapter for LLMs? | LLaMA (13B) | Frozen | WWW 2024 | [[Paper]](https://arxiv.org/pdf/2402.12984v1.pdf) | Text-attributed Graph(TAG)很难扩展到十亿级别的LLM，忽略了LLM的zero-shot能力。一些自监督GNN-LM方法分开训练LM和GNN，导致结果是次优的。本文提出GraphAdapter冻结LM，将LM输出层替换为可训练的adapter GNN，表示层面融合PLM输出的文本表示和GNN的结构表示，在输出层面也加入纯PLM的next token预测概率输出。使用预训练-微调范式（参数包括GNN+Fusion模块），微调时在PLM-head之后加入New-Head（参数包括GNN+Fusion+new-head）。下游任务是节点分类。 |
 
 </p>
 </details>

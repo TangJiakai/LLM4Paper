@@ -287,11 +287,8 @@
 |      TtW      | Talk the Walk: Synthetic Data Generation for Conversational Music Recommendation                 |  T5-base (223M) & T5-XXL (11B)  |   Full Finetuning & Frozen   |      Arxiv 2023      |                                          |                    |
 |      N/A      | Rethinking the Evaluation for Conversational Recommendation in the Era of Large Language Models  |             ChatGPT             |            Frozen            |      EMNLP 2023      | [[Paper]](https://arxiv.org/abs/2305.13112) |                    |
 
-</p>
-</details>
+<h3 id="1.5">1.5 LLM for RS Pipeline Controller</h3>
 
-<details><summary><h3 id="1.5">1.5 LLM for RS Pipeline Controller</h3></summary>
-<p>
 
 | **Name** | **Paper**                                                                                  | **LLM Backbone (Largest)** | **LLM Tuning Strategy** | **Publication** |              **Link**              | Main Contributions                                                                                                                                                                                                                                                                                                                                |
 | :------------: | :----------------------------------------------------------------------------------------------- | :------------------------------: | :---------------------------: | :-------------------: | :--------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -303,11 +300,8 @@
 |      CORE      | Lending Interaction Wings to Recommender Systems with Conversational Agents                      |               N/A               |              N/A              |       NIPS 2023       | [[Paper]](https://arxiv.org/abs/2310.04230) |                                                                                                                                                                                                                                                                                                                                                   |
 | LLMCRS✅ | A Large Language Model Enhanced Conversational Recommender System | LLaMA2 (7B) | Full Finetuning | Arxiv 2023 | [[Paper]](https://arxiv.org/abs/2308.06212) | 对话推荐由多个子任务构成，如用户偏好诱引、推荐、解释、物品搜索。现有CRS无法高效地管理多个子任务。本文提出使用LLM管理各个子任务，对于子任务的解决，是通过LLM调用专家模型，最后使用LLM作为语言接口与用户对话。具体实现包括基于规划的指令、基于样例的指令、动态子任务和模型匹配、基于总结的对话生成。使用基于模型表现反馈的RL机制优化LLM。 |
 
-</p>
-</details>
+<h3 id="1.6">1.6 Other Related Papers</h3>
 
-<details><summary><h3 id="1.6">1.6 Other Related Papers</h3></summary>
-<p>
 
 <h4 id="1.6.1">1.6.1 Related Survey Papers</h4>
 

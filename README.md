@@ -267,8 +267,8 @@
 |     BDLM✅     | Bridging the Information Gap Between Domain-Specific Model and General LLM for Personalized Recommendation   |           Vicuna (7B)           |        Full Finetuning        |      Arxiv 2023      |   [[Paper]](https://arxiv.org/abs/2311.03778)   | 大模型以文本形式表达难以区分相似但仍有微小区别的商品，且难以表示复杂的用户行为模式；传统domain-specific模型难以在数据稀疏场景表现好。提出信息共享模块，用户/物品ID token扩充词表，联合模型训练等方法。       |
 |  RecRanker✅  | RecRanker: Instruction Tuning Large Language Model as Ranker for Top-k Recommendation                        |           LLaMA2 (13B)           |        Full Finetuning        |      Arxiv 2023      |   [[Paper]](https://arxiv.org/abs/2312.16018)   | 混合排序（point+pair+list）指令构建，prompt位置消偏，自适应用户采样（重要性、cluster-based，重复惩罚），推断时使用三种排序任务的（调整后）分数之和。                                                         |
 
-<details><summary><h3 id="1.4">1.4 LLM for User Interaction</h3></summary>
-<p>
+<h3 id="1.4">1.4 LLM for User Interaction</h3>
+
 
 <h4 id="1.4.1">1.4.1 Task-oriented User Interaction</h4>
 

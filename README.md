@@ -337,7 +337,7 @@
 | Generative Recommendation: Towards Next-generation Recommender Paradigm                 |      Arxiv 2023      |          [[Paper]](https://arxiv.org/abs/2304.03516)          |                    |
 | Towards Personalized Prompt-Model Retrieval for Generative Recommendation               |      Arxiv 2023      |          [[Paper]](https://arxiv.org/abs/2308.02205)          |                    |
 | Generative Next-Basket Recommendation                                                   |      RecSys 2023      | [[Paper]](https://dl.acm.org/doi/abs/10.1145/3604915.3608823) |                    |
-| Unlocking the Potential of User Feedback: Leveraging Large Language Model as User Simulator to Enhance Dialogue System | CIKM<br />2023 | [[Paper]](https://arxiv.org/abs/2306.09821) | |
+| Unlocking the Potential of User Feedback: Leveraging Large Language Model as User Simulator to Enhance Dialogue System | CIKM<br />2023 | [[Paper]](https://arxiv.org/abs/2306.09821) | 对监督微调后的对话模型，使用LLM对输出进行满意度评分，然后套用PPO优化方法执行模型参数更新，本质是将LLM作为annotation-free user simulator |
 
 <h3 id="1.7">1.7 Paper Pending List: to be Added to Our Survey Paper</h3>
 

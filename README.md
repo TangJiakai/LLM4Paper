@@ -146,6 +146,7 @@
 | NoteLLM✅ | NoteLLM: A Retrievable Large Language Model for Note Recommendation | LLaMA2 (7B) | Full<br />Finetuning | WWW 2024 | [[Paper]](https://arxiv.org/pdf/2403.01744) | NoteLLM通过学习用户行为和生成关键概念来提高用户的论文推荐和标签生成体验。动机是文章认为tag/category生成和embedding生成都其实是对关键信息的压缩，因此前者对embedding生成是有好处的。具体实现是通过在prompt里面添加[EMB],\<Output\>来获取物品embedding和tag生成。二者分别对应目标函数的对比学习和CE学习部分。 |
 | LRD✅ | Sequential Recommendation with Latent Relations based on Large Language Model | GPT-3<br />(175B) | Frozen | SIGIR 2024 | [[Code]](https://github.com/ysh-1998/LRD) | 现有关系感知序列模型使用预定义的关系，容易遇到稀疏性问题。本文采用LLM挖掘物品之间的隐藏关系。首先对物品描述用LLM来抽取表示，利用DVAE思想提取物品对背后的关系，再基于提取出表示和连接物品重构目标物品；对于已有定义的关系，也会引入知识图谱的优化目标；再加上推荐本身的目标进行多任务联合学习。 |
 | CTRL✅ | CTRL: Connect Collaborative and Language Model for CTR Prediction | RoBERTa | Frozen | Arxiv 2023 | [[Paper]](https://arxiv.org/pdf/2306.02841) | 提出CTRL将协同信号和语义信号结合起来。具体是提出两阶段训练方法：一阶段是执行文本表示和CTR协同模型表示进行对比学习；二阶段是对协同模型在下游任务上进行SFT微调。 |
+| EAGER✅ | EAGER: Two-Stream Generative Recommender with Behavior-Semantic Collaboration | Sentence-T5 | Frozen | KDD 2024 | [[Code]](https://github.com/yewzz/EAGER) | 现有生成式推荐要么只关注语义，要么只关注行为知识，忽略了二者的互补性。故提出EAGER，作为一种双流生成架构，利用共享encoder和分离decoder，辅以基于置信度的排序策略。此外，提出使用summary token的全局对比任务实现每种类型（行为和语义）的区分性解码，以及语义引导的迁移任务，通过设计的重构和识别目标提升行为和语义的交叉能力。 |
 
 <h4 id="1.2.2">1.2.2 Unified Cross-domain Recommendation</h4>
 

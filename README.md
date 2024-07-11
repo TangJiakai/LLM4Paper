@@ -146,6 +146,7 @@
 | NoteLLM✅ | NoteLLM: A Retrievable Large Language Model for Note Recommendation | LLaMA2 (7B) | Full<br />Finetuning | WWW 2024 | [[Paper]](https://arxiv.org/pdf/2403.01744) | NoteLLM通过学习用户行为和生成关键概念来提高用户的论文推荐和标签生成体验。动机是文章认为tag/category生成和embedding生成都其实是对关键信息的压缩，因此前者对embedding生成是有好处的。具体实现是通过在prompt里面添加[EMB],\<Output\>来获取物品embedding和tag生成。二者分别对应目标函数的对比学习和CE学习部分。 |
 | LRD✅ | Sequential Recommendation with Latent Relations based on Large Language Model | GPT-3<br />(175B) | Frozen | SIGIR 2024 | [[Code]](https://github.com/ysh-1998/LRD) | 现有关系感知序列模型使用预定义的关系，容易遇到稀疏性问题。本文采用LLM挖掘物品之间的隐藏关系。首先对物品描述用LLM来抽取表示，利用DVAE思想提取物品对背后的关系，再基于提取出表示和连接物品重构目标物品；对于已有定义的关系，也会引入知识图谱的优化目标；再加上推荐本身的目标进行多任务联合学习。 |
 | CTRL✅ | CTRL: Connect Collaborative and Language Model for CTR Prediction | RoBERTa | Frozen | Arxiv 2023 | [[Paper]](https://arxiv.org/pdf/2306.02841) | 提出CTRL将协同信号和语义信号结合起来。具体是提出两阶段训练方法：一阶段是执行文本表示和CTR协同模型表示进行对比学习；二阶段是对协同模型在下游任务上进行SFT微调。 |
+| EAGER✅ | EAGER: Two-Stream Generative Recommender with Behavior-Semantic Collaboration | Sentence-T5 | Frozen | KDD 2024 | [[Code]](https://github.com/yewzz/EAGER) | 现有生成式推荐要么只关注语义，要么只关注行为知识，忽略了二者的互补性。故提出EAGER，作为一种双流生成架构，利用共享encoder和分离decoder，辅以基于置信度的排序策略。此外，提出使用summary token的全局对比任务实现每种类型（行为和语义）的区分性解码，以及语义引导的迁移任务，通过设计的重构和识别目标提升行为和语义的交叉能力。 |
 
 <h4 id="1.2.2">1.2.2 Unified Cross-domain Recommendation</h4>
 
@@ -317,6 +318,7 @@
 |      CORE      | Lending Interaction Wings to Recommender Systems with Conversational Agents                      |               N/A               |              N/A              |       NIPS 2023       | [[Paper]](https://arxiv.org/abs/2310.04230) |                                                                                                                                                                                                                                                                                                                                                   |
 | LLMCRS✅ | A Large Language Model Enhanced Conversational Recommender System | LLaMA2 (7B) | Full Finetuning | Arxiv 2023 | [[Paper]](https://arxiv.org/abs/2308.06212) | 对话推荐由多个子任务构成，如用户偏好诱引、推荐、解释、物品搜索。现有CRS无法高效地管理多个子任务。本文提出使用LLM管理各个子任务，对于子任务的解决，是通过LLM调用专家模型，最后使用LLM作为语言接口与用户对话。具体实现包括基于规划的指令、基于样例的指令、动态子任务和模型匹配、基于总结的对话生成。使用基于模型表现反馈的RL机制优化LLM。 |
 | MACRec✅ | Multi-Agent Collaboration Framework for Recommender Systems |  | Frozen | SIGIR 2024 | [[Code]](https://github.com/wzf2000/MACRec) | 介绍了一个名为MACRec的多智能体协作推荐系统框架。该框架利用不同智能体的能力和协作来解决推荐任务，包括评分预测、顺序推荐、对话推荐和解释生成等。每个智能体扮演不同的角色，如任务解释器、经理、反思者、搜索者和用户/物品分析师，以协同完成任务。框架提供了可定制的智能体和有用的工具，利用大型语言模型的能力进行推荐任务。 |
+| ToolRec✅ | Let Me Do It For You: Towards LLM Empowered Recommendation via Tool Learning | ChatGPT | Frozen | SIGIR 2024 | [[Code]](https://github.com/Go0day/ToolRec-Code) | 现有的基于LLM的RS会出现幻觉、物品语义空间和用户行为空间之间的错位，或者过于简单的控制策略。本文提出ToolRec，通过工具学习的LLM赋能推荐的框架，它使用LLM作为代理用户，从而指导推荐过程并调用外部工具来生成与用户细微偏好密切相关的推荐列表。使用CoT技术实现用户决策模拟，引入面向物品属性的检索和排序工具，前者会包括attribute-specific encoder和dense layer的可训练参数（融合语义和行为知识），后者是prompt实现。 |
 
 <h3 id="1.6">1.6 Other Related Papers</h3>
 

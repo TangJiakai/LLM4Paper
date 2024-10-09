@@ -363,6 +363,7 @@
 | ✅ | Source Echo Chamber: Exploring the Escalation of Source Bias in User, Data, and Recommender System Feedback Loop | ChatGPT | Frozen | KDD 2024 | [[Paper]](https://arxiv.org/abs/2405.17998) | 研究发现，当人工生成内容（HGC）和人工智能生成内容（AIGC）同时存在于推荐系统中时，推荐模型更倾向于推荐AIGC而不是HGC。作者通过实验证明了这种来源偏见在不同阶段的反馈循环中会被放大，从而对用户的推荐结果产生影响。论文分为三个阶段：HGC  dominate，HGC-AIGC coexist，AIGC dominance表示过去、现在和未来的状态。对于方法部分，论文提出对物品方和user history encoder分别执行L1 loss，后者为了防止不同history sequence表示趋于一致，引入序列表示的熵最大化正则项减轻此问题。 |
 | CoRAL✅ | CoRAL: Collaborative Retrieval-Augmented Large Language Models Improve Long-tail Recommendation | GPT-4 | Frozen | KDD 2024 | [[Paper]](https://arxiv.org/abs/2403.06447) | LLM擅长解决长尾问题，但缺乏协同信息。将长尾推荐转化为自然语言推理问题，使用LLM对长尾物品进行细粒度推理。为了对齐推理能力到特定任务的知识，引入协同检索增强LLM，将协同证据放到prompt中。但由于prompt可能会非常长，故引入最小充分协同信息概念，如引入用户/物品协同信息获取共同模式，并借用RL框架得到一系列(s,a,r,s')四元组，为后续的DDPG算法准备数据。 |
 | ✅ | Large Language Models as Evaluators for Recommendation Explanations | GPT-4 | Frozen | RecSys 2024 | [[Code]](https://github.com/Xiaoyu-SZ/LLMasEvaluator/blob/main/annot.py) | 设计三层次元评估策略来衡量ground truth和评估标签（众包、LLM、参考性指标BLEL和ROUGE）。三层次分别为dataset，user和pair。探究LLM在zero-shot、（有/无个性化）one-shot、集成多个LLM等情况的评估表现。 |
+| ✅CheatAgent | CheatAgent: Attacking LLM-Empowered Recommender Systems via LLM Agent | LLama2<br />(7B) | LoRA | KDD '24 | [Paper](https://dl.acm.org/doi/10.1145/3637528.3671837) | 传统攻击方法采用RL，然而这个无法很好处理复杂文本输入。本文提出CheatAgent通过线定位插入token的位置，再执行token扰动生成，进行黑盒攻击推荐大模型。扰动生成部分包括线初始化一个策略生成，再通过self-reflection策略优化，最终执行扰动选择。 |
 
 <h3 id="1.7">1.7 Paper Pending List: to be Added to Our Survey Paper</h3>
 
